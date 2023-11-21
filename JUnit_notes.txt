@@ -1,0 +1,102 @@
+TDD Framework
+
+Test Driven Development
+
+Red-Green-Refactor
+
+More focus on Unit Testing
+
+=============JUnit==================
+
+Annotation - Important role of annotation
+
+- Standard Tests
+- Assertions
+- Conditional test execution
+
+JUnit : Opensource, Regression testing framework, Implement Unit testing in java
+
+Junit & Maven
+
+First Testing then coding.
+
+Features of JUnit : =============================================================
+
+
+1. Fixture : Test Scenario, Test Objective, Baseline for Running a Test
+
+2. Test Suite : Group of unit test cases, we can run together
+
+3. Test Runner : Class that executes the test cases
+
+4. JUnit Class : 
+
+=============================Test Structure of Junit==============================
+
+1. Include the test class and we need to create package
+
+2. Import JUnit library class 
+
+3. Name the class that holds the test suite (Annotation)
+
+4. Add the class name in the constructor and in suite() method
+
+5. Add actual tersts
+
+=======================Lifecycle Methods=============================
+
+Verify that admin user can able to create new user successfully.
+
+
+public void setup() ---------------> Before method, it is executing before each test methods
+Preconditons : 
+
+- User should have Admin rights into the system.
+
+public void setup()
+public void test1() ---------------> Execution of test cases
+public void tearDown()
+
+public void setup()
+public void test2() 
+public void tearDown()
+
+public void setup()
+public void test3() 
+public void tearDown()
+
+
+Test Steps : 
+
+- Login with admin user.
+- Go to Admin section > Click on "Create User" button.
+- Enter the data in all the mandatory fields.
+- Click on Submit button.
+
+Expected Result : 
+
+- User should be created successfully.
+
+
+public void tearDown() ----------> Clean-Up Activity
+Post Condition : 
+
+- Newly created user should be login with valid credentials.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
